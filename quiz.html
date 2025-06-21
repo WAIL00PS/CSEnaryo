@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSEnaryo | Quiz</title>
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="u-make-me-crazy.css" />
+    <link rel="stylesheet" href="this-should-work.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="index.html"><img src="icon.png" alt="CSEnaryo Logo" /></a>
+        <h1>
+          <a
+            href="index.html"
+            style="text-decoration: none; color: inherit; font-weight: inherit"
+          >
+            CSEnaryo</a
+          >
+        </h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <label class="theme-switch">
+              <input type="checkbox" id="theme-toggle" />
+              <span class="slider">
+                <span class="icon sun">☀️</span>
+                <span class="icon moon">🌙</span>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main">
+      <div class="flashcard-container">
+        <h2>Select a CSEnaryo</h2>
+        <div class="pagination-controls">
+          <button id="prev-page" class="pagination-btn">Previous</button>
+          <span id="page-info">Page 1 of 5</span>
+          <button id="next-page" class="pagination-btn">Next</button>
+        </div>
+
+        <div class="flashcards-grid" id="flashcards-grid">
+          <!-- Flashcards will be dynamically inserted here -->
+        </div>
+
+        <div class="pagination-controls">
+          <button id="prev-page-bottom" class="pagination-btn">Previous</button>
+          <span id="page-info-bottom">Page 1 of 5</span>
+          <button id="next-page-bottom" class="pagination-btn">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Vibe coded by WAI · 2025 · Powered by AI</p>
+    </footer>
+
+    <script src="u-r-my-sun-and-moon.js"></script>
+    <script src="why-am-i-like-this.js"></script>
+  </body>
+</html>

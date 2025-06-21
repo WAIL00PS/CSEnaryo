@@ -1,0 +1,82 @@
+.flashcard-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flashcards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.clickable-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(123, 77, 255, 0.3);
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.pagination-btn {
+  background-color: #5e35b1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #7e57c2;
+}
+
+.pagination-btn:disabled {
+  background-color: #b39ddb;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .flashcards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .clickable-card {
+    min-height: 80px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flashcards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .pagination-controls {
+    gap: 10px;
+  }
+
+  .pagination-btn {
+    padding: 6px 12px;
+  }
+}
