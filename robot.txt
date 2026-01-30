@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://csenaryo.xyz /sitemap.xml
+
+Sitemap: https://csenaryo.xyz/sitemap.xml
